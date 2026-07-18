@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/StickyLines/Enabled/@EntryValue" value="false" type="bool" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
@@ -30,8 +31,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="39e20e98-4011-449f-bd18-d0b2ad4f30a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.cargo/config.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/allocator.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/include/liballoc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/heap.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kernel/virt.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lauve" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/liballoc/liballoc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.cargo/config.toml" beforeDir="false" afterPath="$PROJECT_DIR$/.cargo/config.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/boot.S" beforeDir="false" afterPath="$PROJECT_DIR$/boot.S" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/.rustc_info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kernel.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/kernel.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/.fingerprint/kernel_rust-1ac333defbe22f16/lib-kernel_rust" beforeDir="false" afterPath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/.fingerprint/kernel_rust-1ac333defbe22f16/lib-kernel_rust" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/.fingerprint/kernel_rust-1ac333defbe22f16/output-lib-kernel_rust" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/deps/kernel_rust-1ac333defbe22f16.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/deps/kernel_rust-1ac333defbe22f16.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/libkernel_rust.a" beforeDir="false" afterPath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/libkernel_rust.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/libkernel_rust.d" beforeDir="false" afterPath="$PROJECT_DIR$/build/riscv64gc-unknown-none-elf/release/libkernel_rust.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel.c" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/kernel.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kernel.elf" beforeDir="false" afterPath="$PROJECT_DIR$/kernel.elf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libfdt/fdt.c" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libfdt/fdt.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/libfdt/libfdt_env.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/libfdt/libfdt_env.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linker.ld" beforeDir="false" afterPath="$PROJECT_DIR$/linker.ld" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/allocator.rs" beforeDir="false" afterPath="$PROJECT_DIR$/build.lauve" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string.c" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/string.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/string.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/string.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uart.c" beforeDir="false" afterPath="$PROJECT_DIR$/kernel/uart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uart.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/uart.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +96,9 @@
   &quot;fromUser&quot;: false
 }</component>
   <component name="ProjectId" id="3GYUvYarow06U1z1gWNMVRBdTYO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectStatusUIService">{
   &quot;uiKindId&quot;: &quot;Widget&quot;
 }</component>
@@ -80,6 +113,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
@@ -103,8 +137,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Code\c\NanoOS" />
+      <recent name="D:\Code\c\NanoOS\include" />
+      <recent name="D:\Code\c\NanoOS\lib\liballoc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Code\c\NanoOS\include" />
+      <recent name="D:\Code\c\NanoOS\kernel" />
       <recent name="D:\Code\c\NanoOS\src" />
     </key>
   </component>
@@ -129,6 +167,9 @@
       <workItem from="1784148230254" duration="380000" />
       <workItem from="1784148642552" duration="917000" />
       <workItem from="1784210879350" duration="21387000" />
+      <workItem from="1784312339952" duration="1171000" />
+      <workItem from="1784326273956" duration="17000" />
+      <workItem from="1784378383087" duration="14165000" />
     </task>
     <servers />
   </component>

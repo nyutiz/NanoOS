@@ -1,0 +1,19 @@
+; cargo build --target-dir build --release
+
+riscv64-unknown-elf-gcc:
+; -march=rv64gc -mabi=lp64d -mcmodel=medany -nostdlib -ffreestanding -fno-pic -I lib/libfdt/ -I .
+boot.S ; boot.o
+kernel/kernel.c ; kernel.o
+kernel/uart.c ; uart.o
+kernel/string.c ; string.o
+lib/libfdt/fdt.c ; fdt.o
+lib/libfdt/fdt_ro.c ; fdt_ro.o
+lib/libfdt/fdt_strerror.c ; fdt_strerror.o
+lib/liballoc/liballoc.c ; liballoc.o
+kernel/heap.c ; heap.o
+kernel/virt.c ; virt.o
+
+
+/home/nyutiz/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/x86_64-unknown-linux-gnu/bin/gcc-ld/ld.lld:
+; -T linker.ld -o kernel.elf
+build/riscv64gc-unknown-none-elf/release/libkernel_rust.a

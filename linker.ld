@@ -9,7 +9,7 @@ SECTIONS
     . = BASE_ADDRESS;
 
     .text : {
-        *(.text.init)   /* Le code de boot.S en premier ! */
+        *(.text.init)
         *(.text .text.*)
     }
 
@@ -29,5 +29,12 @@ SECTIONS
     }
 
     . = ALIGN(4096);
-    _stack_top = . + 0x10000;  /* pile de 64 Ko */
+    .heap (NOLOAD) : {
+        _heap_start = .;
+        . += 16M;
+        _heap_end = .;
+    }
+
+    . = ALIGN(4096);
+    _stack_top = . + 0x10000;
 }
